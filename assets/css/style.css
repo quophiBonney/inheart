@@ -1,19 +1,11 @@
-/* =======================================================================
-Template Name: Youtubers
-Author:  SmartEye Technologies
-Author URI: www.smarteyeapps.com
-Version: 1.0
-coder name:Prabin Raja
-Description: This Template is created for Youtubers
-======================================================================= */
-/* ===================================== Import Less ================================== */
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
-/* ===================================== Basic CSS ==================================== */
 * {
   margin: 0px;
   padding: 0px;
-  list-style: none; }
+  list-style: none; 
+}
 
 img {
   max-width: 100%; }
@@ -139,7 +131,7 @@ body {
   display: block;
   padding-right: 0px; 
 }
-  .inner-title h2 {
+.inner-title h2 {
     width: 100%;
     text-align: center;
     font-size: 1rem;
@@ -149,7 +141,7 @@ body {
     padding-bottom: 10px;
     margin-bottom: 0px;
     width: 300px; 
-  }
+}
   .inner-title p {
     width: 100%;
     text-align: center; }
@@ -258,9 +250,29 @@ body {
   background-color: #F8F8F8;
   margin-bottom: 20px; 
 }
-  .form-control:focus {
+.form-control:focus {
     background-color: #FFF;
-    border-color: #CCC; }
+    border-color: #CCC; 
+}
+.img-portrays {
+  display: flex;
+}
+.sub-port {
+  padding: 0 10px;
+}
+.sub-port img  {
+  width: 300px;
+  height: 200px;
+}
+.img-portrays .sub-port h6 {
+  text-align: center;
+}
+.img-portrays .sub-port img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
 
 .container {
   max-width: 1170px; 
@@ -269,6 +281,9 @@ body {
     .container {
       padding: 10px 15px; 
     } 
+    .sub-port img {
+      flex-wrap: wrap;
+    }
 }
 
 /* =================== Header Style Starts Here =================== */
@@ -493,7 +508,6 @@ header .headwe-nav .social-div ul li {
   height: 14px;
   margin: 0px 0px 10px 10px;
   filter: Alpha(Opacity=50);
-  /*IE7 fix*/
   opacity: 0.8;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -504,10 +518,10 @@ header .headwe-nav .social-div ul li {
 .slider .owl-dots .owl-dot.active span {
   background-color: #fff; }
 
-.slider .owl-dots .owl-dot.active span, .slider .owl-controls.clickable .owl-page:hover span {
+.slider .owl-dots .owl-dot.active span, 
+.slider .owl-controls.clickable .owl-page:hover span {
   background-color: #fff;
   filter: Alpha(Opacity=100);
-  /*IE7 fix*/
   opacity: 1; }
 
 .slider .col-lg-offset-2 {
@@ -525,22 +539,27 @@ header .headwe-nav .social-div ul li {
     margin-top: 20px; }
     .about-us .diag-ro h4 {
       margin-bottom: 20px; }
-    .about-us .diag-ro .about-diag {
-      display: flex;
-      flex: 1;
-      padding: 10px;
-      margin: auto; }
-      .about-us .diag-ro .about-diag .icon {
-        margin: auto;
-        padding: 15px 20px; }
-        .about-us .diag-ro .about-diag .icon i {
-          font-size: 1.8rem;
-          color: #CCC; }
-      .about-us .diag-ro .about-diag .tex {
-        flex-grow: 1; }
-        .about-us .diag-ro .about-diag .tex h5 {
-          font-weight: 600;
-          color: #f78d15; }
+.about-us .diag-ro .about-diag {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  margin: auto; 
+}
+.about-us .diag-ro .about-diag .icon {
+  margin: auto;
+  padding: 15px 20px; 
+}
+.about-us .diag-ro .about-diag .icon i {
+  font-size: 1.8rem;
+  color: #CCC; 
+}
+.about-us .diag-ro .about-diag .tex {
+  flex-grow: 1; 
+}
+.about-us .diag-ro .about-diag .tex h5 {
+  font-weight: 600;
+  color: #f78d15; 
+}
         .about-us .diag-ro .about-diag .tex p {
           text-transform: uppercase;
           font-size: .8rem; }
@@ -730,81 +749,100 @@ header .headwe-nav .social-div ul li {
   background-color: #212121;
   color: #FFF;
   padding: 50px; }
-  @media screen and (max-width: 940px) {
+@media screen and (max-width: 940px) {
     .footer-cont {
-      padding: 30px 10px; } }
+    padding: 30px 10px; 
+  }
+}
   .footer-cont .footer-top {
-    padding-bottom: 40px; }
-    .footer-cont .footer-top .foot-logo h2 {
+    padding-bottom: 40px;
+}
+  .footer-cont .footer-top .foot-logo h2 {
       color: #FFF;
       font-weight: 600;
-      margin-top: 25px; }
-    .footer-cont .footer-top .foot-addr ul {
-      float: right; }
-      .footer-cont .footer-top .foot-addr ul li {
-        float: left;
-        padding: 10px; }
-        .footer-cont .footer-top .foot-addr ul li i {
-          margin-right: 2px; }
-  .footer-cont .foot-botom .fotter-coo h5 {
+      margin-top: 25px; 
+}
+.footer-cont .footer-top .foot-addr ul {
+    float: right; 
+}
+.footer-cont .footer-top .foot-addr ul li {
+    float: left;
+    padding: 10px; 
+}
+.footer-cont .footer-top .foot-addr ul li i {
+    margin-right: 2px;
+}
+.footer-cont .foot-botom .fotter-coo h5 {
     color: #f78d15;
     font-size: 1rem;
-    margin-bottom: 20px; }
-  .footer-cont .foot-botom .fotter-coo ul li {
+    margin-bottom: 20px; 
+}
+.footer-cont .foot-botom .fotter-coo ul li {
     font-size: .9rem;
-    padding: 10px 3px; }
-    .footer-cont .foot-botom .fotter-coo ul li i {
-      margin-right: 5px; }
-  .footer-cont .foot-botom .fotter-coo .gallery-row {
-    margin-top: 5px; }
-    .footer-cont .foot-botom .fotter-coo .gallery-row .gall-col {
-      padding: 5px; }
-
+    padding: 10px 3px; 
+}
+.footer-cont .foot-botom .fotter-coo ul li i {
+    margin-right: 5px; 
+}
+.footer-cont .foot-botom .fotter-coo .gallery-row {
+    margin-top: 5px; 
+}
+.footer-cont .foot-botom .fotter-coo .gallery-row .gall-col {
+      padding: 5px; 
+}
 .footer-ablove {
   padding: 30px;
   background-color: #ff5722;
   color: #FFF;
-  font-size: 1.5rem; }
-
+  font-size: 1.5rem; 
+}
 .footer-ablove .btn {
   float: right;
-  background-color: #FFF; }
+  background-color: #FFF; 
+}
 
-/* =================== Copyroght Starts Here =================== */
+/* =================== Copyright Starts Here =================== */
 .copy {
   padding: 20px;
   background-color: #191616;
-  color: #FFF; }
+  color: #FFF; 
+}
 
 .copy a {
-  color: #FFF; }
+  color: #FFF; 
+}
 
 .copy span {
-  float: right; }
+  float: right; 
+}
 
 .copy span i {
-  margin-right: 20px; }
+  margin-right: 20px; 
+}
 
 .cop-ck {
   padding: 20px;
-  background-color: #ffffffbd; }
-  .cop-ck h2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px; }
+  background-color: #ffffffbd; 
+}
+.cop-ck h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px; 
+}
 
 /* ===================================== Basic CSS ==================================== */
 @media screen and (max-width: 991px) {
   .we-are-making .text-part {
-    text-align: center; }
-
-  .we-are-making .text-part .count .count-sing {
-    margin-bottom: 20px; }
-
-  .headwe-nav .container {
-    padding: 10px; }
-
-  header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link {
+    text-align: center; 
+}
+.we-are-making .text-part .count .count-sing {
+    margin-bottom: 20px; 
+}
+.headwe-nav .container {
+    padding: 10px; 
+}
+.header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link {
     padding: 10px;
-    border-right: 0px; } }
+    border-right: 0px;
+} 
+}
 
-/*# sourceMappingURL=style.css.map */
